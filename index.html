@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toxic Release</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src = "js/script.js"></script>
+    <script type="text/javascript" src="js/squel.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+
+  </head>
+  <body>
+    <div id="panel">
+      <input type="button" class = "Button" value="Show All" onclick="showAll()">
+      <input type="button" class = "Button" value="Hide All" onclick="hideAll()">
+      <b>State: </b>
+      <select id="State" class = "Select"></select>
+      <input type="button" class = "Button" value="SelectState" onclick="selectState()">
+      <b>County: </b>
+      <select id="County" class = "Select" ></select>
+      <input type="button" class = "Button" value="SelectCounty" onclick="selectCounty()">
+      <b>City: </b>
+      <select id="City" class = "Select"></select>
+      <input type="button" class = "Button" value="SelectCity" onclick="selectCity()">      
+    </div>
+    <div id="map-canvas"></div>
+  </body>
+</html>
